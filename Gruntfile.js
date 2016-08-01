@@ -5,14 +5,14 @@ module.exports = function(grunt) {
     browserify: {
       dist: {
         files: {
-          'dist.js': ['js/ui.js']
+          'dist.js': ['lib/ui.js']
         }
       }
     },
 
     watch: {
       browserify: {
-        files: ['Gruntfile.js', 'js/*.js', 'index.html'],
+        files: ['Gruntfile.js', 'lib/*.js', 'index.html'],
         tasks: ['browserify']
       },
       options: {
