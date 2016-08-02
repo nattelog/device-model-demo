@@ -7,6 +7,9 @@ module.exports = function(grunt) {
         files: {
           'dist.js': ['lib/ui.js']
         }
+      },
+      options: {
+        exclude: ['jquery']
       }
     },
 

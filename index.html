@@ -18,12 +18,9 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     >
-     <link rel="stylesheet" href="node_modules/bootstrap-slider/dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-slider/dist/css/bootstrap-slider.css">
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"
-    >
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
 
     <style>
      body {
@@ -31,30 +28,50 @@
        background-color: #f0f0f0;
      }
      .slider {
-       margin-bottom: 15px;
+       margin-top: 15px;
+       display: block;
+     }
+     .slide-box {
+       margin-top: 25px;
+
+     }
+     .slide-value {
+       float: right;
+       cursor: pointer;
      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 sidebar">
+        <div class="col-xs-4 sidebar">
           <h1>Device Rotater</h1>
 
-          <p>Update frequency</p>
-          <input id="updateSlider" type="text" />
+          <div class="slide-box">
+            <span id="freq">Update every 200 ms</span>
+            <input id="updateSlider" type="text" />
+          </div>
 
-          <p>Alpha</p>
-          <input id="alphaSlider" type="text" />
+          <div class="slide-box">
+            <span>Alpha</span>
+            <span id="z" class="slide-value">Value</span>
+            <input id="alphaSlider" type="text" />
+          </div>
 
-          <p>Beta</p>
-          <input id="betaSlider" type="text" />
+          <div class="slide-box">
+            <span>Beta</span>
+            <span id="x" class="slide-value">Value</span>
+            <input id="betaSlider" type="text" />
+          </div>
 
-          <p>Gamma</p>
-          <input id="gammaSlider" type="text" />
+          <div class="slide-box">
+            <span>Gamma</span>
+            <span id="y" class="slide-value">Value</span>
+            <input id="gammaSlider" type="text" />
+          </div>
         </div>
 
-        <div class="col-md-8" id="model"></div>
+        <div class="col-xs-8" id="model"></div>
       </div>
     </div>
     <script src="dist.js"></script>
