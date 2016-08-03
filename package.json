@@ -4,7 +4,7 @@
   "description": "",
   "main": "device-model.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "grunt build"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "bootstrap-slider": "^9.1.1",
-    "node-pid-controller": "^1.0.0"
+    "velocitymodel": "^0.1.2"
   }
 }
