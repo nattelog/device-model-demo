@@ -1,5 +1,5 @@
 {
-  "name": "device-rotater",
+  "name": "device-model-demo",
   "version": "0.0.1",
   "description": "",
   "main": "device-model.js",
@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "bootstrap-slider": "^9.1.1",
-    "velocitymodel": "^0.1.2"
+    "device-model": "^1.0.3"
   }
 }
